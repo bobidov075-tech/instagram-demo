@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instagram Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen flex items-center justify-center
+             bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400">
+
+    <!-- Login card -->
+    <div class="w-[330px] bg-[#181818] rounded-xl overflow-hidden text-white">
+
+        <!-- Form -->
+        <div class="px-5 py-8">
+
+            <!-- Logo -->
+            <h1 class="text-center text-3xl font-serif italic mb-7">
+                Instagram
+            </h1>
+
+            <!-- Username -->
+            <input
+                type="text"
+                placeholder="Phone number, username or email address"
+                class="input input-sm w-full bg-[#333] border-none
+                       text-white placeholder:text-gray-300 mb-2"
+            />
+
+            <!-- Password -->
+            <label class="relative block">
+                <input
+                    type="password"
+                    placeholder="Password"
+                    class="input input-sm w-full bg-[#333] border-none
+                           text-white placeholder:text-gray-300"
+                >
+
+                <span class="absolute right-3 top-1/2 -translate-y-1/2
+                             text-gray-300 cursor-pointer">
+                    ◉
+                </span>
+            </label>
+
+            <!-- Forgot password -->
+            <div class="text-right mt-2 mb-3">
+                <a href="#" class="text-[10px] text-sky-400">
+                    Forgotten password?
+                </a>
+            </div>
+
+            <!-- Login -->
+            <button class="btn btn-info btn-sm w-full text-white border-none">
+                Log In
+            </button>
+
+            <!-- OR -->
+            <div class="flex items-center gap-3 my-4">
+                <div class="h-px bg-gray-500 flex-1"></div>
+
+                <span class="text-[9px] text-gray-300">OR</span>
+
+                <div class="h-px bg-gray-500 flex-1"></div>
+            </div>
+
+            <!-- Facebook -->
+            <button
+                class="w-full text-center text-[10px] text-sky-400
+                       hover:text-sky-300">
+                <span class="font-bold text-sm">f</span>
+                &nbsp; Log in with Facebook
+            </button>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="border-t border-gray-500 px-5 py-5 text-center">
+            <span class="text-[9px] text-gray-300">
+                Don't have an account?
+            </span>
+
+            <a href="#" class="text-[9px] text-sky-400">
+                Sign Up
+            </a>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
